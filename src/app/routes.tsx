@@ -1,8 +1,8 @@
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 import HOME_PAGE from '../pages/home'
-import SELECT_PAGE from '../pages/select'
 import TEMPLATE_PAGE from '../pages/template'
-import EXPORT_PAGE from '../pages/export'
+import EDIT_PAGE from '../pages/edit'
+import CONVERT_PAGE from '../pages/convert'
 import NOT_FOUND_PAGE from '../pages/not_found'
 
 const REDIRECT_TO_HOME = () => <Redirect to="/home" />
@@ -13,9 +13,9 @@ const ROUTES = () => {
         <Switch>
             <Route component={REDIRECT_TO_HOME} path="/" exact />
             <Route component={HOME_PAGE} path="/home" exact />
-            <Route component={SELECT_PAGE} path="/select" exact />
             <Route component={TEMPLATE_PAGE} path="/template" exact />
-            <Route component={EXPORT_PAGE} path="/export" exact />
+            <Route component={EDIT_PAGE} path="/edit" exact />
+            <Route component={CONVERT_PAGE} path="/convert" exact />
 
             <Route component={NOT_FOUND_PAGE} />
         </Switch>
