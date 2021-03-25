@@ -5,7 +5,7 @@ const NAVBAR = () => {
   return (
         <NAVBAR_COMPONENT_STYLE>
             <div className="navbar">
-                <Link className="navbar__step" to="/home">
+                <Link className="navbar__step navbar__step--active" to="/home">
                   Home
                 </Link>
                 <Link className="navbar__step" to="/template">

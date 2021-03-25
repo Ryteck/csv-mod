@@ -73,7 +73,21 @@ padding: 10px;
                 border-radius: 0 5px 0 50px;
                 background: #ffffff;
                 transition: 0.5s;
-                box-shadow: 2px -2px 0 2px #ff004e;
+                box-shadow: 2px -2px 0 2px #2a2e79;
+            }
+
+            &--active, :hover {
+                color: #ffffff;
+                background: #ff004e;
+
+                ::before {
+                    color: #ff004e;
+                }
+
+                ::after {
+                    color: #ff004e;
+                    background: #ff004e;
+                }
             }
         }
     }
