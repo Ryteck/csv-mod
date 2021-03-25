@@ -4,7 +4,7 @@ import NAVBAR from '../components/navbar'
 const EDIT_PAGE = () => {
   return (
     <>
-      <NAVBAR />
+      <NAVBAR order={2} />
       <EDIT_PAGE_STYLE>
         Página edit
       </EDIT_PAGE_STYLE>

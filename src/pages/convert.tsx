@@ -6,7 +6,7 @@ import cloudDw from '../resources/img/cloud_download.svg'
 const CONVERT_PAGE = () => {
   return (
     <>
-      <NAVBAR />
+      <NAVBAR order={3} />
       <CONVERT_PAGE_STYLE>
         <div className="container">
           <div className="container__option">

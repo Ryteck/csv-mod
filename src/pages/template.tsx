@@ -4,7 +4,7 @@ import NAVBAR from '../components/navbar'
 const TEMPLATE_PAGE = () => {
   return (
     <>
-      <NAVBAR />
+      <NAVBAR order={1} />
       <TEMPLATE_PAGE_STYLE>
         Página template
       </TEMPLATE_PAGE_STYLE>

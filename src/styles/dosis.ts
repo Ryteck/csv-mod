@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import dosis from '../resources/fonts/dosis.ttf'
+import dosis from '../resources/font/dosis.ttf'
 
 const DOSIS_STYLE = createGlobalStyle`
     @font-face {

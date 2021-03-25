@@ -4,7 +4,7 @@ import NAVBAR from '../components/navbar'
 const HOME_PAGE = () => {
   return (
     <>
-      <NAVBAR />
+      <NAVBAR order={0} />
       <HOME_PAGE_STYLE>
         Página home
       </HOME_PAGE_STYLE>
