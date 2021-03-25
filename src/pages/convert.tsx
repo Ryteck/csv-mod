@@ -1,12 +1,12 @@
 import CONVERT_PAGE_STYLE from '../styles/pages/convert'
-import NAVBAR from '../components/navbar'
+import NAVBAR_COMPONENT from '../components/navbar'
 import cloudUp from '../resources/img/cloud_upload.svg'
 import cloudDw from '../resources/img/cloud_download.svg'
 
 const CONVERT_PAGE = () => {
   return (
     <>
-      <NAVBAR order={3} />
+      <NAVBAR_COMPONENT order={3} />
       <CONVERT_PAGE_STYLE>
         <div className="container">
           <div className="container__option">

@@ -1,10 +1,10 @@
 import HOME_PAGE_STYLE from '../styles/pages/home'
-import NAVBAR from '../components/navbar'
+import NAVBAR_COMPONENT from '../components/navbar'
 
 const HOME_PAGE = () => {
   return (
     <>
-      <NAVBAR order={0} />
+      <NAVBAR_COMPONENT order={0} />
       <HOME_PAGE_STYLE>
         Página home
       </HOME_PAGE_STYLE>

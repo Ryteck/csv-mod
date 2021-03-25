@@ -3,7 +3,7 @@ import HOME_PAGE from '../pages/home'
 import TEMPLATE_PAGE from '../pages/template'
 import EDIT_PAGE from '../pages/edit'
 import CONVERT_PAGE from '../pages/convert'
-import NOT_FOUND_PAGE from '../pages/not_found'
+import NOT_FOUND_PAGE from '../pages/notFound'
 
 const REDIRECT_TO_HOME = () => <Redirect to="/home" />
 

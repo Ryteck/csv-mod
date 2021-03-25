@@ -3,16 +3,16 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import NAVBAR_COMPONENT_STYLE from '../styles/components/navbar'
 
-interface I_NAVBAR_PROPS {
+interface I_NAVBAR_COMPONENT_PROPS {
   order: number;
 }
 
-const NAVBAR: FC<I_NAVBAR_PROPS> = props => {
+const NAVBAR_COMPONENT: FC<I_NAVBAR_COMPONENT_PROPS> = props => {
   function getLinkClassValue (position: number): string {
     const DEFAULT_VALUE = 'navbar__step'
     const ACTIVE_VALUE = 'navbar__step--active'
     let newClassValue = DEFAULT_VALUE
-    newClassValue += (position <= props.order) ? ` ${ACTIVE_VALUE}` : ''
+    newClassValue += position <= props.order ? ` ${ACTIVE_VALUE}` : ''
     return newClassValue
   }
 
@@ -36,8 +36,8 @@ const NAVBAR: FC<I_NAVBAR_PROPS> = props => {
   )
 }
 
-NAVBAR.propTypes = {
+NAVBAR_COMPONENT.propTypes = {
   order: PropTypes.number.isRequired
 }
 
-export default NAVBAR
+export default NAVBAR_COMPONENT
